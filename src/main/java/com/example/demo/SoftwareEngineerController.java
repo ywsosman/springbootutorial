@@ -19,7 +19,7 @@ public class SoftwareEngineerController {
     public List<SoftwareEngineer> getEngineers() {
         return softwareEngineerService.getAllSoftwareEngineers();
     }
-    @GetMapping
+    @GetMapping("{id}")
     public SoftwareEngineer getEngineerById(@PathVariable Integer id) {
         return softwareEngineerService.getSoftwareEngineerById(id);
 
